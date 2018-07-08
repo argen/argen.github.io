@@ -58,3 +58,14 @@ permalink:   /:categories/:title
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp"]
+
+collections:
+  photos:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+        type: photos
+    values:
+      layout: photo
